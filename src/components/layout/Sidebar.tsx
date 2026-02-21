@@ -145,7 +145,7 @@ export function Sidebar({ viewMode, setViewMode }: SidebarProps) {
             {currentSets.length > 0 && (
               <Tooltip text="Borrar todos los sets de este nivel (irreversible)">
                 <button className="btn-danger sidebar-clear-btn" onClick={handleClearLevel}>
-                  🗑 Limpiar nivel
+                  Limpiar nivel
                 </button>
               </Tooltip>
             )}
@@ -155,7 +155,7 @@ export function Sidebar({ viewMode, setViewMode }: SidebarProps) {
                 onClick={() => setShowLevelSettings(true)}
                 aria-label="Configuración del nivel"
               >
-                ⚙ Config. nivel
+                Configuración del nivel
               </button>
             </Tooltip>
           </div>

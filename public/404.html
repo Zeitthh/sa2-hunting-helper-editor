@@ -8,7 +8,7 @@
     // Encodes the requested path as a ?p= query param and redirects to index.html
     // which decodes it and calls history.replaceState to restore the real URL.
     (function() {
-      var base = '/sa2-hunting-editor/'; // igual que en vite.config.ts
+      var base = '/'; // Change to '/repo-name/' if deployed to a subdirectory
       var path = window.location.pathname.replace(base.replace(/\/$/, ''), '');
       var search = window.location.search;
       var hash = window.location.hash;

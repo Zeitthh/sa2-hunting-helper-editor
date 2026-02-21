@@ -113,7 +113,6 @@ export function parseTypeScriptContent(content: string): EditorSet[] {
       borderColor: 'none',
       column: 'default',
       pieces: [],
-      confirms: [],
     };
 
     // Constructor args → first piece row
@@ -134,13 +133,6 @@ export function parseTypeScriptContent(content: string): EditorSet[] {
         const p3s = parseP3Arg(args[1].trim());
         set.pieces.push({ p2, p3s });
       }
-    }
-
-    // .addConfirm
-    const addConfirmRegex = /\.addConfirm\s*\(\s*"([^"]*)"\s*,\s*"([^"]*)"\s*\)/g;
-    let confMatch: RegExpExecArray | null;
-    while ((confMatch = addConfirmRegex.exec(chainStr)) !== null) {
-      set.confirms.push({ confirmed: confMatch[1], confirmedBy: confMatch[2] });
     }
 
     // .setBorderColor

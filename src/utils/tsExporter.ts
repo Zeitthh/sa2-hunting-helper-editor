@@ -36,11 +36,6 @@ export function exportToTypeScript(sets: EditorSet[]): string {
       const r = set.pieces[i];
       ts += `\n\t.addPieces(${tsPiece(r.p2)}, ${tsP3s(r.p3s)})`;
     }
-    set.confirms?.forEach(c => {
-      if (c.confirmed && c.confirmedBy) {
-        ts += `\n\t.addConfirm("${c.confirmed}", "${c.confirmedBy}")`;
-      }
-    });
     if (set.borderColor && set.borderColor !== 'none') {
       ts += `\n\t.setBorderColor("${set.borderColor}")`;
     }

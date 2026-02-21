@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { useEditor, type LevelSettings } from '../../store/editorStore';
+import { useEditor } from '../../store/editorStore';
 import { getP1List } from '../../data/levelData';
 import { levelUsesPredefinedP1, LEVELS, levelHasPHGroups, PH_GROUP_LABELS, getP1Group, type PH_Group } from '../../data/levels';
 import type { LevelKey } from '../../types/editor';

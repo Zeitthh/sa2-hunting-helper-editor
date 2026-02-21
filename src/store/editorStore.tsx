@@ -56,11 +56,11 @@ type LevelSets   = Record<LevelKey, EditorSet[]>;
 type LevelActive = Record<LevelKey, number | null>;
 
 function emptyLevelSets(): LevelSets {
-  return Object.fromEntries(LEVELS.map(l => [l.key, []])) as LevelSets;
+  return Object.fromEntries(LEVELS.map(l => [l.key, []])) as unknown as LevelSets;
 }
 
 function emptyLevelActive(): LevelActive {
-  return Object.fromEntries(LEVELS.map(l => [l.key, null])) as LevelActive;
+  return Object.fromEntries(LEVELS.map(l => [l.key, null])) as unknown as LevelActive;
 }
 
 // ─────────────────────────────────────────────
@@ -119,7 +119,7 @@ function mergeWithEmpty(saved: Partial<EditorState>): EditorState {
     empty.isDarkMode = saved.isDarkMode;
   }
   if (saved.language === 'spa' || saved.language === 'eng') {
-    empty.language = saved.language;
+    empty.language = saved.language as 'spa' | 'eng';
   }
   if (saved.levelSettings && typeof saved.levelSettings === 'object') {
     empty.levelSettings = saved.levelSettings;

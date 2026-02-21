@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useEditor } from '../../store/editorStore';
-import { levelUsesPredefinedP1, levelHasPHGroups, getP1Group, PH_GROUP_LABELS, LEVEL_ACCENT } from '../../data/levels';
+import { levelUsesPredefinedP1, levelHasPHGroups, getP1Group, PH_GROUP_LABELS } from '../../data/levels';
 import { getP1List } from '../../data/levelData';
 import { PieceRow } from './PieceRow';
 import { useModal } from '../ui/Modal';

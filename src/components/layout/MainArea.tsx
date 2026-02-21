@@ -19,14 +19,12 @@ export function MainArea({ viewMode, onSelectLevel }: MainAreaProps) {
     <main className="main-area">
       {currentSets.length === 0 ? (
         <div className="empty-state">
-          <div className="empty-state-icon">📋</div>
           <h3>Sin sets en este nivel</h3>
           <p>Crea tu primer set con el botón <strong>+ Nuevo Set</strong> en el panel izquierdo.</p>
           <p className="empty-hint">También puedes usar <kbd>Ctrl+N</kbd></p>
         </div>
       ) : activeSet === null ? (
         <div className="empty-state">
-          <div className="empty-state-icon">👈</div>
           <h3>Selecciona un set</h3>
           <p>Haz clic en cualquier set del panel izquierdo para editarlo.</p>
         </div>

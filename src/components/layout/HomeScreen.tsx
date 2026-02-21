@@ -75,7 +75,7 @@ export function HomeScreen({ onSelectLevel }: HomeScreenProps) {
       <div className="home-content">
         {/* Hero */}
         <div className="home-hero">
-          <img src="/icons/HuntingHelperEditorLogo.svg" alt="SA2 Hunting Editor" className="home-logo"
+          <img src=`${import.meta.env.BASE_URL}icons/HuntingHelperEditorLogo.svg` className="home-logo"
             width={64} height={64} onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }} />
           <h1 className="home-title">SA2 Hunting Editor</h1>
           <p className="home-subtitle">Crea y organiza sets de caza para Sonic Adventure 2</p>

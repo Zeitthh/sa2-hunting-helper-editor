@@ -1,0 +1,83 @@
+// ─── Light theme (default) ────────────────────────────────────────────────────
+:root,
+:root.light-theme {
+  --bg-page:        #f0f0f0;
+  --bg-container:   #ffffff;
+  --bg-card:        #ffffff;
+  --bg-piece-row:   #f8f9fa;
+  --bg-confirms:    #fff8e1;
+  --bg-input:       #ffffff;
+  --bg-sidebar:     #ffffff;
+  --bg-topbar:      #ffffff;
+
+  --text-primary:   #14171a;
+  --text-secondary: #536471;
+  --text-muted:     #8899ac;
+  --text-label:     #14171a;
+
+  --border-default: #cfd9de;
+  --border-card:    #cfd9de;
+  --border-confirms:#ffe082;
+  --border-input:   #cfd9de;
+  --border-sidebar: #e0e0e0;
+  --border-topbar:  #e0e0e0;
+
+  --accent:           #1d9bf0;
+  --accent-success:   #00ba7c;
+  --accent-danger:    #f4212e;
+  --accent-warning:   #ff7800;
+  --accent-secondary: #536471;
+
+  --shadow:         0 1px 4px rgba(0,0,0,0.08);
+
+  --tag-bg:            #eff3f4;
+  --tag-border:        #cfd9de;
+  --tag-color:         #536471;
+  --tag-active-bg:     #d2ecff;
+  --tag-active-border: #1d9bf0;
+  --tag-active-color:  #0d6ca5;
+
+  --sidebar-width:  248px;
+  --topbar-height:  56px;
+}
+
+// ─── Dark theme — X/Twitter Dim palette ──────────────────────────────────────
+:root.dark-theme {
+  // Backgrounds — Dim mode hierarchy
+  --bg-page:        #15202b;   // outermost layer
+  --bg-container:   #192734;   // panels / sidebar / topbar
+  --bg-card:        #1e2732;   // cards sit above container
+  --bg-piece-row:   #192734;   // inner rows
+  --bg-confirms:    #1e2732;
+  --bg-input:       #253341;   // inputs slightly lighter
+
+  // Text
+  --text-primary:   #e7e9ea;
+  --text-secondary: #8899a6;
+  --text-muted:     #5c6e7a;
+  --text-label:     #e7e9ea;
+
+  // Borders
+  --border-default: #38444d;
+  --border-card:    #38444d;
+  --border-confirms:#38444d;
+  --border-input:   #38444d;
+  --border-sidebar: #38444d;
+  --border-topbar:  #38444d;
+
+  // Accents stay X-blue based
+  --accent:           #1d9bf0;
+  --accent-success:   #00ba7c;
+  --accent-danger:    #f4212e;
+  --accent-warning:   #ff7800;
+  --accent-secondary: #8899a6;
+
+  --shadow:         0 2px 8px rgba(0,0,0,0.5);
+
+  --tag-bg:            #253341;
+  --tag-border:        #38444d;
+  --tag-color:         #8899a6;
+  --tag-active-bg:     #1c3a52;
+  --tag-active-border: #1d9bf0;
+  --tag-active-color:  #6bc9f5;
+}
